@@ -43,7 +43,7 @@
             xhr.open('POST', '/register');
             xhr.onreadystatechange = function () {
                 if (xhr.readyState === 4) {
-                    console.log(JSON.parse(xhr.responseText));
+                    alert(xhr.responseText);
                 }
             };
             xhr.setRequestHeader('Content-Type', 'application/json');
